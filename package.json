@@ -18,7 +18,10 @@
     "gatsby-plugin-sass": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sass": "^1.32.8"
+    "react-flickity-component": "^3.6.1",
+    "react-slick": "^0.28.1",
+    "sass": "^1.32.8",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "2.2.1"

@@ -1,0 +1,51 @@
+@import './global.scss';
+
+header {
+    img {
+        width:100%;
+    }
+
+    button {
+        color: $white;
+        background-color: $nav-tab-active-text;
+        padding: 12px 32px;
+        font-size: 14px;
+        font-weight: 200;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $button-hover;
+    }
+}
+
+#header_nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink {
+    text-decoration: none;
+    color: $nav-tab-inactive-text;
+    width: auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navLink:visited {
+    color: $nav-tab-inactive-text;
+}
+
+.navLink:hover {
+    color: $nav-tab-active-text;
+}
+
+.navLink.active {
+    color: $nav-tab-active-text;
+}
+
+.border {
+    border-right: 1px solid $nav-tab-border;
+}

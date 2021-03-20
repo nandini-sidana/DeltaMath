@@ -1,0 +1,207 @@
+@import './global.scss';
+
+.SectionHeader {
+    background-image: url("../assets/home/Rectangle3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    .math_done {
+        margin-left: 120px;
+        margin-top: 220px;
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: $white;
+            font-weight: 500;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            margin-bottom: -10px;
+
+            span {
+                border-bottom: 8px solid $button-yel-background;
+            }
+        }
+    
+        h3 {
+            margin-top: 50px;
+            font-weight: normal;
+            color: $white;
+            font-size: 1.7rem;
+        }
+    }
+
+    .yellow_btns {
+        display: flex;
+        margin-left: 120px;
+        margin-top: 80px;
+        margin-bottom: 140px;
+
+        button {
+            color: $button-text;
+            background-color: $button-yel-background;
+            cursor: pointer;
+            border-radius: 6px;
+            margin-right: 20px;
+            padding: 10px 30px;
+            width: 220px;
+            font-size: 18px;
+            height: 65px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: $button-yel-hover;
+        }     
+    }
+}
+
+.SectionHome2 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+
+    div {
+        width: 25%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: $nav-tab-active-text;
+            font-weight: lighter;
+        }
+
+        p {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            color: $p-color;
+            text-align: center;
+            justify-content: center;
+            line-height: 1.6rem;
+            font-size: 16px;
+        }
+    }
+}
+
+.SectionHome3 {
+    background-color: $sectionHome3-background;
+    position: relative;
+    
+    .forTeachers {
+        width: 45%;
+        margin-left: 5%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        h1 {
+            color: $nav-tab-active-text;
+            font-family: Georgia,serif;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+
+        p {
+            margin-top: 50px;
+            font-family: Lato,sans-serif;
+            color: $p-color;
+            line-height: 1.7rem;
+        }
+
+        button {
+            color: $white;
+            background-color: $nav-tab-active-text;
+            padding: 22px 90px;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .teacherImage {
+        position: absolute;
+        right: 0;
+        top: 80px;
+
+        #callout_img {
+            position: absolute;
+            right: 350px;
+            top: 50px;
+        }
+    }
+}
+
+.SectionHeader4 {
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding-bottom: 90px;
+    
+    .stu_learn {
+        width: 45%;
+        right: 20px;
+        position: absolute;
+        float: right;
+
+        h1 {
+            color: $nav-tab-active-text;
+            font-family: Georgia,serif;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+
+        p {
+            margin-top: 50px;
+            font-family: Lato,sans-serif;
+            color: $p-color;
+            line-height: 1.7rem;
+        }
+
+        button {
+            color: $white;
+            background-color: $nav-tab-active-text;
+            padding: 22px 90px;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .stu_img {
+        position: absolute;
+        left: 0;
+        top: 80px;
+    }
+}
+
+#calloutCopy_img {
+    position: absolute;
+    left: 300px;
+    top: 80px;
+}
+
+.ProblemsSolved {
+    background-color: $nav-tab-active-text;
+    text-align: center;
+
+    h3 {
+        color: $white;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}

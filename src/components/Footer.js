@@ -1,9 +1,12 @@
 import React from 'react'
+import logo from '../assets/images/dm-Logo.png'
+import Navigation from '../components/Navigation';
 
 export default function Footer() {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            <img src={logo}/>
+            <Navigation/>
+        </footer>
     )
 }

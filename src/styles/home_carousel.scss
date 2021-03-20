@@ -1,0 +1,83 @@
+@import './global.scss';
+
+.carousel_section {
+    text-align: center;
+    padding-bottom: 100px;
+
+    h2 {
+        color: $nav-tab-active-text;
+    }
+}
+
+.carousel_container {
+    width: 75%;
+    margin: auto;
+}
+
+// .card {
+//     width: 20%;
+// }
+
+.prevArrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-shadow: -2px 2px 0 #6b6b6b;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -25px;
+    cursor: pointer;
+}
+
+.nextArrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-shadow: -2px 2px 0 #6b6b6b;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    right: -25px;
+    cursor: pointer;
+}
+
+.carousel_card {
+    height: 380px;
+    width: 94%;
+    box-shadow: 0 3px 8px 3px rgb(0 0 0 / 5%), 0 2px 2px 0 rgb(0 0 0 / 9%), 0 1px 6px 0 rgb(0 0 0 / 2%);
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background-color: $carousel_card;
+    text-align: center;
+    margin-left: 10px;
+
+    p {
+        color: $carousel-p;
+        margin: 30px auto 30px auto;
+        width: 90%;
+        line-height: 1.5rem;
+    }
+
+    .card_name {
+        color: $carousel-name;
+    }
+
+    .ts_card {
+        margin-top: -12px;
+        color: $carousel-p;
+        font-weight: lighter;
+    }
+
+    .card_quote {
+        height: 25px;
+        width: 32px;
+        margin: auto;
+    }
+
+    .person {
+        margin: auto;
+    }
+}

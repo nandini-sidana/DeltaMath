@@ -1,7 +1,31 @@
+@import "./typography.scss";
+
 //colors
-// $nav-active-text: #212121;
-// $nav-inactive-text: #757575;
-// $nav-disabled-text: #9e9e9e;
+    $white: #fff;
+    //navbar
+    $nav-tab-active-text: #303d4e; //also button colour and text color at some points, problem counter section
+    $nav-tab-inactive-text: #757575;
+    $nav-tab-border: #d6d6d6;
+    // $nav-disabled-text: #9e9e9e;
+
+    //login button
+    $button-hover: rgb(48, 62, 79, 0.9);
+
+    //yellow buttons
+    $button-text: #FFF7D5;
+    $button-yel-background: #F9A622;
+    $button-yel-hover: rgb(249,166,34,0.7);
+
+    //homeSection2
+    $p-color: #292627;
+
+    //background
+    $sectionHome3-background: #f0f0f0;
+
+    //carousel_card
+    $carousel_card: #f0eeef;
+    $carousel-p: #6b6b6b;
+    $carousel-name: #313d4e;
 
 
 *, :after, :before {
@@ -13,16 +37,34 @@ body, html {
     margin: 0;
     padding: 0;
     display: block;
+    font-family: Lato,sans-serif;
 }
 
-nav {
+header {
+    width: 100%;
+    float: left;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 80px;
     align-items: center;
-    max-width: 1200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    background-color: $white;  
     margin: 0 auto;
-    position: relative;
+    z-index: 200;
 }
 
+section {
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    border: none;
+    outline: none;
+}

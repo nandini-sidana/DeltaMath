@@ -1,0 +1,31 @@
+@import './global.scss';
+
+footer {
+    text-align: center;
+}
+
+#footer_nav {
+    width: 70%;
+    margin: auto;
+}
+
+.footernavLink {
+    text-decoration: none;
+    color: $nav-tab-inactive-text;
+    width: auto;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footernavLink:visited {
+    color: $nav-tab-inactive-text;
+}
+
+.footernavLink:hover {
+    color: $nav-tab-active-text;
+}
+
+.footernavLink.active {
+    color: $nav-tab-active-text;
+}
