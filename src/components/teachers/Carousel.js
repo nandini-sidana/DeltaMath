@@ -16,12 +16,54 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Carousel() {
 
+    function SampleNextArrow(props) {
+        const { style, onClick } = props;
+        return (
+          <div
+            style={{ ...style, 
+                display: "block",
+                width: `30px`,
+                height: `30px`,
+                boxShadow: `-2px 2px 0 #000`,
+                opacity: `0.9`,
+                position: `absolute`,
+                top: `120%`,
+                transform: `translateY(-50%) rotate(-135deg)`,
+                right: `47%`,
+                cursor: `pointer` }}
+            onClick={onClick}
+          />
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { style, onClick } = props;
+        return (
+          <div
+            style={{ ...style, 
+                display: "block",
+                width: `30px`,
+                height: `30px`,
+                boxShadow: `-2px 2px 0 #000`,
+                opacity: `0.9`,
+                position: `absolute`,
+                top: `120%`,
+                transform: `translateY(-50%) rotate(45deg)`,
+                left: `47%`,
+                cursor: `pointer`}}
+            onClick={onClick}
+          />
+        );
+      }
+
     var settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
       };
 
     return (
@@ -38,7 +80,7 @@ export default function Carousel() {
                     <img src={pop6} alt = ""></img>
                 </Slider>
             </div>
-            <img src={mac} alt = ""></img>
+            {/* <img src={mac} alt = ""></img> */}
         </section>
     )
 }

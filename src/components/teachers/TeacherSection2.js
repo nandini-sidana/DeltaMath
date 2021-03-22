@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/teachers.scss'
 
+
 export default function TeacherSection2() {
     return (
         <section className = "teacherSection2">

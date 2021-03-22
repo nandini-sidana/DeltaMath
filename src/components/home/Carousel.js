@@ -75,7 +75,6 @@ export default function Carousel() {
             <h2>Why do millions of people choose to learn on DeltaMath?</h2>
 
             {/* Carousel */}
-            <div className="left-arrow"/>
             <div className = "carousel_container">
                 <Slider {...settings}>
                     <CarouselCard className = "card" content = {content} teach_or_student = {parent} src = {Ellipse3}/>

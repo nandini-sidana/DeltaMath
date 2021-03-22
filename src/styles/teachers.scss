@@ -4,10 +4,6 @@
     background-image: url("../assets/teachers/Rectangle4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: -1;
 
     color: $white;
     text-align: center;
@@ -22,9 +18,17 @@
     h1 {
         color: $white;
         margin-top: 20px;
-        font-size: 3.5em;
+        font-size: 3.5rem;
         font-weight: lighter;
         font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+@media (max-width: 450px){
+    .teacherSection1 {
+        h1 {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -71,12 +75,42 @@
     }
 }
 
+@media (max-width: 560px){
+    .teacherSection2 {
+        div {
+            flex-direction: column;
+            div {
+                border-right: none;
+                h2 {
+                    font-size: 20px;
+                    padding-left: 0;
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-right: 0;
+                }
+    
+                button {
+                    padding: 4px 20px;
+                    width: 180px;
+                    font-size: 16px;
+                    height: 50px;
+                    font-weight: 300;    
+                }
+            }
+        }
+    }
+}
+
 .Carousel {
     text-align: center;
     padding-top: 80px;
     position: relative;
 
     .carousel_container {
+        background-image: url('../assets/teachers/macbook.png');
+        background-repeat: no-repeat;
+        background-position: center;
         width: 95%;
         margin: auto;
         margin-top: 100px;
@@ -84,17 +118,9 @@
         img {
             padding-left: 20px;
             padding-right: 20px;
-            border: 1px solid black;
-            width: 80%;
+            width: 450px;
             height: 250px;
-            z-index: 1000;
         }
-    }
-
-    img {
-        z-index: -100;
-        margin-top: -180px;
-        outline: none;
     }
 }
 
@@ -184,6 +210,26 @@
     }
 }
 
+@media (max-width: 800px){
+    .offers {
+        h2 {
+            width: 90%;
+            margin: auto;
+            font-size: 22px;
+        }
+
+        div {
+            flex-direction: column;
+
+            div {
+                width: 75%;
+                margin-bottom: 40px;
+                height: auto;
+            }
+        }
+    }
+}
+
 .dm_teacher {
     background-color: $nav-tab-active-text;
     color: $white;
@@ -219,4 +265,125 @@
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    .text {
+        text-align: center;
+        padding-right: 40px;
+
+        h1 {
+            color: $white;
+            padding-bottom: 30px;
+            border-bottom: 2px solid $nav-tab-inactive-text;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        #get_sta {
+            color: $white;
+            padding-top: 12px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                h2 {
+                    color: $white;
+                    font-weight: lighter;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                    padding-left: 0;
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-right: 0;
+                }
+
+                div {
+                    width: 80%;
+                    margin: auto;
+                    
+                    button {
+                        color: $button-text;
+                        cursor: pointer;
+                        background-color: $button-yel-background;
+                        border-radius: 4px;
+                        margin-right: 20px;
+                        padding: 4px 20px;
+                        width: 180px;
+                        font-size: 16px;
+                        height: 50px;
+                        font-weight: 300;    
+                        box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+                    }
+                
+                    button:hover {
+                        background-color: $button-yel-hover;  
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .TeacherSection5 {
+        flex-direction: column;
+
+        .image {
+            width: 80%;
+            margin: auto;
+            padding-bottom: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 80%;
+            margin: auto;
+            padding-right: 0;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            div {
+                flex-direction: column;
+
+                div {
+                    text-align: center;
+
+                    h2 {
+                        font-size: 20px;
+                        padding-left: 0;
+                        width: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-right: 0;
+                    }
+
+                    div {
+                        width: 30%;
+                        margin: auto;
+                        button {
+                            padding: 4px 20px;
+                            width: 180px;
+                            font-size: 16px;
+                            height: 50px;
+                            font-weight: 300;  
+                            margin-bottom: 20px;  
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,173 @@
+@import '../styles/global.scss';
+
+.About1 {
+    background-image: url("../assets/about/Rectangle\ 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    div {
+        color: $white;
+        padding-top: 100px;
+        padding-bottom: 90px;
+        font-family: Georgia,serif;;
+        width: 80%;
+        margin: auto;
+
+        h1 {
+            font-size: 3.5rem;
+            padding-bottom: 0px;
+            font-weight: 500;
+            span {
+                border-bottom: 6px solid $button-yel-background;
+            }
+        }
+
+        h3 {
+            font-family: sans-serif;
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.About2 {
+    padding: 60px 0 25px 0;
+
+    .wrapper_2 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        .image_container {
+            width: 45%;
+        }
+        .para_container {
+            width: 40%;
+    
+            p {
+                line-height: 1.6;
+                font-size: 15px;
+            }
+    
+            button {
+                color: $nav-tab-active-text;
+                border: 2px solid $nav-tab-active-text;
+                border-radius: 4px;
+                background-color: $white;
+                padding: 12px 28px;
+                font-size: 18px;
+                letter-spacing: -1.5px;
+                font-weight: bold;
+            }
+    
+            button:hover {
+                background-color: $nav-tab-active-text;
+                color: $white;
+            }
+        } 
+    }    
+}
+
+@media (max-width: 700px) {
+    .About2 {
+        .wrapper_2 {
+            flex-direction: column;
+        }
+
+        .image_container {
+            width: 100%;
+            margin: auto;
+        }
+        .para_container {
+            width: 100%;
+            margin: auto;
+
+            button {
+                width: auto;
+            }
+        }
+    }
+
+    .carousel_card_about {
+        h2 {
+            font-size: 20px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.About3 {
+    text-align: center;
+    h1 {
+        font-weight: lighter;
+        color: $nav-tab-active-text;
+        font-size: 2.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .leader_wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+    }
+}
+
+.card_wrapper {
+    background-color: $white;
+    color: $nav-tab-active-text;
+    cursor: pointer;
+    height: auto;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 25px;
+
+    h3 {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
+}
+
+.card_wrapper:hover {
+    color: $white;
+    background-color: $nav-tab-active-text;
+}
+
+.carousel {
+    background-color: $nav-tab-active-text;
+}
+
+.carousel_card_about {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+.carousel_container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: $white;
+}

@@ -1,11 +1,12 @@
 import React from 'react'
-import '../../styles/login.scss'
+import '../../styles/forms.scss'
 
-export default function LoginForm(props) {
+export default function CreateAccountForm(props) {
     return (
-        <div className="form_div">
+        <div>
             <form>
-                <h4>Please sign in</h4>
+                <h3>Create Teacher Account</h3>
+                <h2>Personal Information</h2>
                 <input
                     type = "text" key = {props.key}
                     value= {props.nameValue} placeholder="Username or email"
@@ -19,7 +20,7 @@ export default function LoginForm(props) {
                 <button disabled={true}>
                     Login
                 </button>
-            </form>   
+            </form>
         </div>
     )
 }
