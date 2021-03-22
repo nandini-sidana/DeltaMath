@@ -27,21 +27,27 @@
     $carousel-p: #6b6b6b;
     $carousel-name: #313d4e;
 
+    //footer
+    $footer-text: #494949;
 
 *, :after, :before {
     box-sizing: border-box;
 }
 
 body, html {
-    height: 100%;
-    margin: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
     padding: 0;
     display: block;
     font-family: Lato,sans-serif;
+    overflow-x: hidden;
 }
 
 header {
+    box-sizing: border-box;
     width: 100%;
+    text-align: center;
     float: left;
     display: flex;
     justify-content: space-around;

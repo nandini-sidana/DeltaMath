@@ -4,7 +4,15 @@ import '../../styles/home.scss'
 export default function ProblemsSolved() {
     return (
         <section className = "ProblemsSolved">
-            <div></div>
+            <div>
+                <span>
+                    <span>
+                        <span>
+                            
+                        </span>
+                    </span>
+                </span>
+            </div>
             <h3>Problems Solved with Delta Math</h3>
         </section>
     )

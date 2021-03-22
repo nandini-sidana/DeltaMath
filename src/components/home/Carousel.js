@@ -10,14 +10,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const nextArrow = <div className = "nextArrow"/>
-const prevArrow = <div className = "prevArrow"/>
+// const nextArrow = <div className = "nextArrow"/>
+// const prevArrow = <div className = "prevArrow"/>
 
 function SampleNextArrow(props) {
-    const { nextArrow, style, onClick } = props;
+    const { style, onClick } = props;
     return (
       <div
-        className={nextArrow}
+        //lassName={nextArrow}
         style={{ ...style, 
             display: "block",
             width: `30px`,
@@ -35,10 +35,10 @@ function SampleNextArrow(props) {
   }
   
   function SamplePrevArrow(props) {
-    const { prevArrow, style, onClick } = props;
+    const { style, onClick } = props;
     return (
       <div
-        className={prevArrow}
+        //className={prevArrow}
         style={{ ...style, 
             display: "block",
             width: `30px`,

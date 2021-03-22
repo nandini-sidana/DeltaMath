@@ -1,9 +1,9 @@
 import React from 'react'
-import '../../styles/home.scss';
+import '../../styles/home.scss'
 
 export default function SectionHeader1() {
     return (
-        <section className = "SectionHeader">
+        <section className = "SectionHeader1">
             <div className = "math_done">
                 <h1>Math Done <span>right.</span></h1>
                 <h1>Depth, clarity, and rigor.</h1>
