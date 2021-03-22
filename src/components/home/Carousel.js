@@ -5,13 +5,10 @@ import CarouselCard from '../../components/home/CarouselCard'
 import Ellipse3 from '../../assets/home/Ellipse3.png'
 import Ellipse4 from '../../assets/home/Ellipse4.png'
 import Ellipse5 from '../../assets/home/Ellipse5.png'
-import Slider from "react-slick";
 
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// const nextArrow = <div className = "nextArrow"/>
-// const prevArrow = <div className = "prevArrow"/>
 
 function SampleNextArrow(props) {
     const { style, onClick } = props;
